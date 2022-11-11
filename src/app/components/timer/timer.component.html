@@ -1,0 +1,11 @@
+<h2>Timer</h2>
+<h2>{{ timer.getCounter() }}s</h2>
+<div>
+  <div>
+    <div>
+      <input #input type="text" placeholder="Interval" />
+    </div>
+    <button type="button" (click)="timer.start(input.value)">Start</button>
+    <button type="button" (click)="timer.stop()">Stop</button>
+  </div>
+</div>
